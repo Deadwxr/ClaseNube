@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Origen de los números naturales</title>
+    <meta name="description" content="Breve explicación sobre el origen histórico y matemático de los números naturales." />
+    <style>
+        :root{
+            --bg:#f7fafc; --card:#ffffff; --muted:#6b7280; --accent:#0ea5a8;
+            --max-width:900px;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        }
+        body{
+            background:linear-gradient(180deg,#ecfeff 0%,var(--bg) 100%);
+            color:#0f172a; margin:0; padding:2rem; display:flex; justify-content:center;
+        }
+        .page{
+            width:100%; max-width:var(--max-width); background:var(--card); border-radius:12px;
+            box-shadow:0 8px 24px rgba(2,6,23,0.08); padding:2rem; box-sizing:border-box;
+        }
+        header{margin-bottom:1rem}
+        h1{margin:0; font-size:1.6rem; color:#063747;}
+        p.lead{color:var(--muted); margin-top:.5rem}
+        section{margin-top:1.25rem}
+        h2{font-size:1.05rem; margin:0 0 .5rem 0; color:#064e3b}
+        ul{margin:0.25rem 0 0 1.25rem}
+        .timeline{border-left:3px solid #e6fffa; padding-left:1rem; margin-left:.5rem}
+        .item{margin-bottom:.75rem}
+        code{background:#f1f5f9; padding:.15rem .4rem; border-radius:4px; font-family:monospace; font-size:.95em}
+        footer{margin-top:1.5rem; color:var(--muted); font-size:.9rem}
+        a{color:var(--accent); text-decoration:none}
+        @media (max-width:560px){
+            body{padding:1rem} .page{padding:1rem}
+        }
+    </style>
+</head>
+<body>
+    <main class="page" role="main">
+        <header>
+            <h1>El origen de los números naturales</h1>
+            <p class="lead">Resumen histórico y conceptual sobre cómo surgieron y cómo se formalizaron los números naturales.</p>
+        </header>
+
+        <section aria-labelledby="intro">
+            <h2 id="intro">¿Qué son los números naturales?</h2>
+            <p>Los números naturales son los números que se usan para contar objetos: 0, 1, 2, 3, ... (en algunas tradiciones se excluye el 0 y se empieza en 1). Son la base de la aritmética y la teoría de conjuntos en matemáticas.</p>
+        </section>
+
+        <section aria-labelledby="history">
+            <h2 id="history">Breve historia</h2>
+            <div class="timeline" aria-hidden="false">
+                <div class="item">
+                    <strong>Prehistoria y primeras cuentas</strong>
+                    <p class="muted">Marcas y cuentas (conchas, huesos tallados) usadas para registrar cantidades básicas.</p>
+                </div>
+                <div class="item">
+                    <strong>Antiguas civilizaciones</strong>
+                    <p class="muted">Sumerios, egipcios, babilonios e hindúes desarrollaron sistemas numéricos y notaciones posicionales que facilitaron el conteo y el cálculo.</p>
+                </div>
+                <div class="item">
+                    <strong>Grecia clásica</strong>
+                    <p class="muted">Interés en fundamentos lógicos y filosofía de los números; desarrollo de la teoría de números y pruebas matemáticas.</p>
+                </div>
+                <div class="item">
+                    <strong>Edad Media y renacimiento</strong>
+                    <p class="muted">Difusión del sistema decimal hindú-arábigo en Europa; nuevas técnicas aritméticas y comerciales.</p>
+                </div>
+                <div class="item">
+                    <strong>Formalización moderna</strong>
+                    <p class="muted">Siglo XIX: axiomatización mediante las <em>axiomas de Peano</em> y la concepción de números como objetos de teoría de conjuntos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section aria-labelledby="peano">
+            <h2 id="peano">Axiomas de Peano (síntesis)</h2>
+            <p>En 1889, Giuseppe Peano propuso cinco axiomas que definen los números naturales y la operación de sucesor. En forma informal:</p>
+            <ul>
+                <li>Existe un número natural llamado 0 (o 1, según la convención).</li>
+                <li>Cada número natural tiene un sucesor que también es natural.</li>
+                <li>No existe un número cuyo sucesor sea 0.</li>
+                <li>Números distintos tienen sucesores distintos (inyección del sucesor).</li>
+                <li>Si un conjunto contiene a 0 y es cerrado bajo el sucesor, entonces contiene a todos los naturales (principio de inducción).</li>
+            </ul>
+            <p>Estos axiomas permiten construir la aritmética básica y probar propiedades por inducción.</p>
+        </section>
+
+        <section aria-labelledby="notation">
+            <h2 id="notation">Notación y convenciones</h2>
+            <ul>
+                <li>Conjunto de naturales: <code>ℕ</code> (varía si incluye o no al 0).</li>
+                <li>Operaciones básicas: suma, producto, comparación.</li>
+                <li>Construcciones modernas: números naturales como clases de equivalencia, o como sucesores aplicados repetidamente a 0.</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="importance">
+            <h2 id="importance">Importancia y aplicaciones</h2>
+            <ul>
+                <li>Fundamento de la aritmética y la teoría de números.</li>
+                <li>Base de la informática (conteo, índices, estructuras discretas).</li>
+                <li>Uso en razonamiento matemático formal, pruebas por inducción y algoritmos.</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="sources">
+            <h2 id="sources">Lecturas y recursos</h2>
+            <ul>
+                <li><a href="https://es.wikipedia.org/wiki/N%C3%BAmero_natural" target="_blank" rel="noopener">Números naturales — Wikipedia (es)</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Peano_axioms" target="_blank" rel="noopener">Peano axioms — Wikipedia (en)</a></li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>Página creada como introducción al origen histórico y la formalización de los números naturales.</p>
+        </footer>
+    </main>
+</body>
+</html></div>
